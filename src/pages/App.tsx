@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Link, Button } from '../atoms';
+import { Footer } from '../molecules';
+import { Game } from '../organisms';
 
 const Container = styled.div`
-  background-color: #282c34;
+  background-color: #deffde;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,9 +18,8 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
-      <Link href="www.google.com" text="Artizarra" />
-      <Link href="www.google.com" text="Github" />
-      <Button href="www.google.com" text="Dame algo" />
+      <Game />
+      <Footer />
     </Container>
   );
 }

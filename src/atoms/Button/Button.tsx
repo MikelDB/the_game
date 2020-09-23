@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.a`
-    color: black;
+    color: #deffde;
+    background-color: #505b50;
+    font-size: 16px;
 `;
 
 type Props = {
