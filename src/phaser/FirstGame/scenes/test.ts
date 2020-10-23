@@ -15,6 +15,7 @@ const sceneConfig: Phaser.Types.Scenes.SettingsConfig = {
     private gameOver: boolean;
     private bombs: Phaser.Physics.Arcade.Group;
     private lastDirection: string;
+    private spaceShip: Phaser.GameObjects.Sprite;
 
     constructor() {
       super(sceneConfig);
@@ -95,6 +96,8 @@ const sceneConfig: Phaser.Types.Scenes.SettingsConfig = {
 
       this.cameras.main.setBounds(0, -450, background.displayWidth, background.displayHeight);
       this.cameras.main.startFollow(this.player);
+
+      this.spaceShip = this.physics.add.image(100, 800, 'imagen.png');
 
     }
    
